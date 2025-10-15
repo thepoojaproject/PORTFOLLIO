@@ -219,6 +219,33 @@
             font-size: 0.9rem;
         }
         
+        .heart {
+            color: #e74c3c;
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            5% {
+                transform: scale(1.1);
+            }
+            10% {
+                transform: scale(1);
+            }
+            15% {
+                transform: scale(1.2);
+            }
+            50% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .header-content {
@@ -347,7 +374,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 Portfolio. All rights reserved.</p>
+            <p>Made in <span class="heart">💖</span> By Armeen</p>
         </div>
     </footer>
 
